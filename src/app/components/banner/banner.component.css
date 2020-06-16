@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.celebrityText {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.741);
+  line-height: 1.2;
+  margin-bottom: 6px;
+  font-weight: 300;
+}
+
+.CelebrityName {
+  color: white;
+  line-height: 1;
+  margin-bottom: 27px;
+  font-size: 7vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .CelebrityName {
+    font-size: 6vh;
+  }
+}
+
+.CelebrityDesc {
+  color: white;
+  line-height: 1.143;
+  margin-bottom: 24px;
+  font-weight: 300;
+  font-size: 3.5vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .CelebrityDesc {
+    font-size: 3vh;
+  }
+}
+
+.container {
+  min-width: 80%;
+  max-width: 25rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cardContainer {
+  width: 60%;
+  padding: 0 9rem;
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .cardContainer {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    padding: 0;
+  }
+}
+
+.cardContainer .box {
+  color: white;
+  height: 45vh;
+  width: 32vw;
+  background: rgba(53, 53, 53, 0.473);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  padding: 30px 36px 36px 30px;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .cardContainer .box {
+    width: 80%;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 1366px) {
+  .cardContainer .box {
+    width: 57vw;
+  }
+}
+
+.cardContainer .raitingBar {
+  height: 60px;
+  width: 100%;
+  background: #1cbbb4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.cardContainer .raitingBar__button {
+  background: #1cbbb4;
+  width: 50%;
+}
+
+.cardContainer .raitingBar__button:nth-child(2) {
+  background: #ffad1d;
+  width: 50%;
+  height: 100%;
+}
+
+.bannerFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 50px;
+  background: rgba(112, 112, 112, 0.3);
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.bannerFooter .label {
+  color: white;
+  text-align: right;
+  -webkit-box-flex: 3.3;
+      -ms-flex: 3.3;
+          flex: 3.3;
+  padding-right: 30px;
+  line-height: 50px;
+}
+
+.bannerFooter .days {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 99%, 0% 100%, 0% calc(50% + 5px), 5px 50%, 0% calc(50% - 5px));
+          clip-path: polygon(0% 0%, 100% 0%, 100% 99%, 0% 100%, 0% calc(50% + 5px), 5px 50%, 0% calc(50% - 5px));
+  background: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  -ms-flex-positive: 7;
+      flex-grow: 7;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 0%;
+      flex-basis: 0%;
+  padding-left: 13px;
+  line-height: 50px;
+  font-size: 35.472px;
+  color: #464646;
+}
+
+.hand {
+  background: url(../../../assets/hand.png);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.hand__bad {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=banner.component.css.map */

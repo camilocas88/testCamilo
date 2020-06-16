@@ -1,0 +1,117 @@
+@import "../../../main.scss";
+.container {
+  position: relative;
+}
+.cardContainer {
+  width: 85vw;
+  position: relative;
+  overflow: hidden;
+
+  @media #{$mediaDesktop} {
+    width: 60%;
+  }
+
+  @media #{$mediaDesktop} {
+    display: block;
+    width: 46vw;
+    padding: 0;
+  }
+
+  .box {
+    box-sizing: border-box;
+    color: white;
+    max-height: 390px;
+    width: 100%;
+    background: rgba(53, 53, 53, 0.473);
+    backdrop-filter: blur(20px);
+    position: relative;
+    max-width: 492px;
+    padding: 20px;
+
+    @media #{$mediaDesktop} {
+      padding: 30px 36px 20px 30px;
+      width: 100%;
+    }
+    @media #{$mediaIpad} {
+      width: 57vw;
+    }
+  }
+}
+
+.raitingBar {
+  height: 60px;
+  width: 100%;
+  max-width: 492px;
+  background: $primary;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+
+  &__button {
+    background: $primary;
+    width: 50%;
+    &:nth-child(2) {
+      background: $secondary;
+      width: 50%;
+      height: 100%;
+    }
+  }
+}
+
+.bannerFooter {
+  display: flex;
+  position: relative;
+  height: 50px;
+  background: rgba(112, 112, 112, 0.3);
+  position: absolute;
+  bottom: 0px;
+  overflow: hidden;
+  width: 100%;
+
+  .label {
+    color: white;
+    text-align: right;
+    flex: 3.3;
+    line-height: 50px;
+    padding-right: 10px;
+    padding-left: 5px;
+
+    @media #{$mediaDesktop} {
+      padding-right: 30px;
+      padding-left: 0px;
+    }
+  }
+
+  .days {
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 99%,
+      0% 100%,
+      0% calc(50% + 5px),
+      5px 50%,
+      0% calc(50% - 5px)
+    );
+    background: rgba(256, 256, 256, 0.7);
+    height: 100%;
+    flex: 7;
+    flex-grow: 7;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    padding-left: 13px;
+    line-height: 50px;
+    font-size: 35.472px;
+    color: rgb(70, 70, 70);
+  }
+}
+
+.hand {
+  background: url(../../../assets/hand.png);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+
+  &__bad {
+    transform: rotate(180deg);
+  }
+}

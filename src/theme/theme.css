@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.celebrityText {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.741);
+  line-height: 1.2;
+  margin-bottom: 6px;
+  font-weight: 300;
+}
+
+.CelebrityName {
+  color: white;
+  line-height: 1;
+  margin-bottom: 27px;
+  font-size: 7vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .CelebrityName {
+    font-size: 6vh;
+  }
+}
+
+.CelebrityDesc {
+  color: white;
+  line-height: 1.143;
+  margin-bottom: 24px;
+  font-weight: 300;
+  font-size: 3.5vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .CelebrityDesc {
+    font-size: 3vh;
+  }
+}
+
+.container {
+  min-width: 80%;
+  max-width: 25rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*# sourceMappingURL=theme.css.map */

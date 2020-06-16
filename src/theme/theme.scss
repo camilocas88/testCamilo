@@ -1,0 +1,123 @@
+@import "./base/mediaqueries";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.btn {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  padding: 6px 15px;
+  cursor: pointer;
+  &:focus,
+  &:hover {
+    outline: none;
+    border: 1px solid white;
+    background: white;
+    color: black;
+  }
+
+  &-like,
+  &-dislike {
+    width: 31px;
+    height: 31px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: rgb(28, 187, 180);
+    margin-right: 10px;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      border: 1px solid white;
+    }
+  }
+
+  &-dislike {
+    background: rgb(255, 173, 29);
+  }
+}
+.w-100 {
+  width: 100% !important;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.celebrityText {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.741);
+  line-height: 1.2;
+  margin-bottom: 6px;
+  font-weight: 300;
+}
+.CelebrityName {
+  color: white;
+  line-height: 1;
+  margin: 0;
+  font-size: 6vh;
+  font-weight: 400;
+  margin-bottom: 15px;
+
+  @media #{$mediaDesktop} {
+    margin-bottom: 27px;
+    font-size: 8vh;
+  }
+}
+
+.CelebrityDesc {
+  color: white;
+  line-height: 1.143;
+  margin-bottom: 24px;
+  font-weight: 300;
+  font-size: 3vh;
+  margin-bottom: 10px;
+
+  @media #{$mediaDesktop} {
+    margin-bottom: 24px;
+    font-size: 2.8vh;
+  }
+}
+
+.more {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+
+  &-veredict {
+    font-weight: 700;
+    font-size: 2.8vh;
+    margin: 15px 0;
+
+    @media #{$mediaDesktop} {
+      font-size: 20px;
+    }
+  }
+
+  span {
+    text-decoration: underline;
+  }
+}
+
+.container {
+  margin-right: 30px;
+  margin-left: 30px;
+  max-width: 720px;
+
+  @media #{$mediaDesktop} {
+    max-width: 1280px;
+    margin-right: calc(5vw + 67px);
+    margin-left: calc(5vw + 67px);
+  }
+}

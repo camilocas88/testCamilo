@@ -1,0 +1,118 @@
+<header class="header">
+  <div class="header-wrapper container">
+    <div itemprop="logo" class="logo">
+      <img src="../../../assets/logo.png" alt="" />
+    </div>
+    <nav class="menu menu--expanded">
+      <div class="menu--opened">
+        <ul class="menu--opened-items">
+          <li class="menu--opened-item">
+            <a href="#" class="menu--opened-link">Past Trials</a>
+          </li>
+          <li class="menu--opened-item">
+            <a href="#" class="menu--opened-link">How It Works </a>
+          </li>
+          <li class="menu--opened-item">
+            <a href="#" class="menu--opened-link">Log In / Sign Up</a>
+          </li>
+          <li class="menu--opened-item">
+            <a href="#" class="menu--opened-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="24px"
+                height="26px"
+              >
+                <path
+                  fill-rule="evenodd"
+                  fill="rgb(255, 255, 255)"
+                  d="M10.262,1.591 C14.662,1.591 18.945,4.470 18.945,10.217 C18.945,15.963 14.662,18.842 10.262,18.842 C5.861,18.842 1.579,15.963 1.579,10.217 C1.579,4.470 5.861,1.591 10.262,1.591 ZM10.262,-0.000 C5.190,-0.000 -0.000,3.402 -0.000,10.217 C-0.000,17.032 5.190,20.433 10.262,20.433 C12.169,20.433 14.093,19.953 15.752,18.990 L22.421,26.000 L24.000,24.409 L17.556,17.641 C19.341,15.942 20.524,13.467 20.524,10.217 C20.524,3.402 15.334,-0.000 10.262,-0.000 Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div (click)="showMenu = !showMenu" class="menu--closed">
+        <div class="menu--closed-icon">
+          <svg
+            id="hamburger"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 26 26"
+            width="26"
+            height="26"
+            class="hamburger"
+            [ngClass]="!showMenu ? 'enabled' : 'disabled'"
+          >
+            <rect x="0" y="3" width="26" height="2.4"></rect>
+            <rect x="0" y="11.8" width="26" height="2.4"></rect>
+            <rect x="0" y="20.6" width="26" height="2.4"></rect>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 26 26"
+            width="26"
+            height="26"
+            class="closemenu"
+            [ngClass]="showMenu ? 'enabled' : ' disabled'"
+          >
+            <rect
+              id="Rectangle-6-Copy"
+              x="11.8"
+              y="0"
+              transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3848 13)"
+              width="2.4"
+              height="26"
+            ></rect>
+            <rect
+              id="Rectangle-6-Copy-2"
+              x="0"
+              y="11.8"
+              transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3848 13)"
+              width="26"
+              height="2.4"
+            ></rect>
+          </svg>
+        </div>
+        <div
+          [ngClass]="
+            !showMenu ? 'menu--short-compressed' : ' menu--short-expanded'
+          "
+          class="menu--short-items"
+        >
+          <ul class="menu--short-list">
+            <li class="menu--closed-item">
+              <a  href="#" class="menu--closed-link"
+                >Past Trials</a
+              >
+            </li>
+            <li class="menu--closed-item">
+              <a href="#" class="menu--closed-link">How It Works</a>
+            </li>
+            <li class="menu--closed-item">
+              <a href="#" class="menu--closed-link"
+                >Log In/<span class="visually-hidden"> Sign Up</span></a
+              >
+            </li>
+            <li class="menu--closed-item">
+              <a href="#" class="menu--opened-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="24px"
+                  height="26px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    fill="rgb(255, 255, 255)"
+                    d="M10.262,1.591 C14.662,1.591 18.945,4.470 18.945,10.217 C18.945,15.963 14.662,18.842 10.262,18.842 C5.861,18.842 1.579,15.963 1.579,10.217 C1.579,4.470 5.861,1.591 10.262,1.591 ZM10.262,-0.000 C5.190,-0.000 -0.000,3.402 -0.000,10.217 C-0.000,17.032 5.190,20.433 10.262,20.433 C12.169,20.433 14.093,19.953 15.752,18.990 L22.421,26.000 L24.000,24.409 L17.556,17.641 C19.341,15.942 20.524,13.467 20.524,10.217 C20.524,3.402 15.334,-0.000 10.262,-0.000 Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.celebrityText {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.741);
+  line-height: 1.2;
+  margin-bottom: 6px;
+  font-weight: 300;
+}
+
+.CelebrityName {
+  color: white;
+  line-height: 1;
+  margin-bottom: 27px;
+  font-size: 7vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .CelebrityName {
+    font-size: 6vh;
+  }
+}
+
+.CelebrityDesc {
+  color: white;
+  line-height: 1.143;
+  margin-bottom: 24px;
+  font-weight: 300;
+  font-size: 3.5vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .CelebrityDesc {
+    font-size: 3vh;
+  }
+}
+
+.container {
+  min-width: 80%;
+  max-width: 25rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(0%, rgba(51, 51, 51, 0)), color-stop(49%, rgba(51, 51, 51, 0.52941)), to(rgba(51, 51, 51, 0.81961)));
+  background-image: linear-gradient(0, rgba(51, 51, 51, 0) 0%, rgba(51, 51, 51, 0.52941) 49%, rgba(51, 51, 51, 0.81961) 100%);
+  height: 150px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+header .header__content {
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  header .header__content {
+    padding-top: 2rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+header .header__content .logo {
+  color: white;
+  line-height: 1.2;
+  text-align: left;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  header .header__content .logo {
+    padding: 0 23px;
+  }
+}
+
+header .header__content .menu {
+  color: white;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  header .header__content .menu {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0px 24px;
+  }
+}
+
+header .header__content .menu__link {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  line-height: 1.2;
+  padding: 0 23px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 1em 0;
+}
+
+@media only screen and (max-width: 768px) {
+  header .header__content .menu__link {
+    font-size: 2.4vh;
+    padding: 0px 4px;
+  }
+}
+
+header .header__content .menu__link:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header .header__content .menu__link--search {
+  font-size: 16px;
+}
+/*# sourceMappingURL=nav-bar.component.css.map */

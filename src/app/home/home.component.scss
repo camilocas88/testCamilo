@@ -1,0 +1,17 @@
+@import "../../main.scss";
+.banner {
+  background-size: cover;
+  background-position: 0% 10%;
+  height: 100vh;
+  background-image: url("../../assets/papa.jpg");
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @media #{$mediaDesktop} {
+    background-position: center;
+  }
+  @media #{$mediaIpad} {
+    background-position: center;
+  }
+}
